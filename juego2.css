@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-image: url(./background.01.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* el que hace que muevas arriba y abajo y la imagen se quede*/
+    background-size: cover;
+}
+
+.titulo{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    text-align: center;
+    font-family: fantasy;
+    color: whitesmoke;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.escogerAtaque{
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+    text-align: center;
+    font-family: fantasy;
+    color: whitesmoke;
+}
+          
+.elecciones{
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+    text-align: center;
+    font-family: fantasy;
+    color: whitesmoke;
+}
+
+.avatar{
+    max-width: 15%;
+}
+
+.avatar:active {
+    transform: scale(0.80);
+    transition: 0,2s all;
+}
+
+#piedra{
+    width: 5rem;
+    height: 5rem;
+}
+#papel{
+    width: 5rem;
+    height: 5rem;
+}
+#tijera{
+    width: 5rem;
+    height: 5rem;
+}
+#lagarto{
+    width: 5rem;
+    height: 5rem;
+}
+#spock{
+    width: 5rem;
+    height: 5rem;
+}
+
+#piedraSinBoton{
+    width: 8rem;
+    height: 8rem;
+    display: none;
+}
+#papelSinBoton{
+    width: 8rem;
+    height: 8rem;
+    display: none;
+}
+#tijeraSinBoton{
+    width: 8rem;
+    height: 8rem;
+    display: none;
+}
+#lagartoSinBoton{
+    width: 8rem;
+    height: 8rem;
+    display: none;
+}
+#spockSinBoton{
+    width: 8rem;
+    height: 8rem;
+    display: none;
+}
+
+#piedraPC{
+    width: 8rem;
+    height: 8rem;
+    display: none;
+
+}
+#papelPC{
+    width: 8rem;
+    height: 8rem;
+    display: none;
+
+}
+#tijeraPC{
+    width: 8rem;
+    height: 8rem;
+    display: none;
+
+}
+#lagartoPC{
+    width: 8rem;
+    height: 8rem;
+    display: none;
+
+}
+#spockPC{
+    width: 8rem;
+    height: 8rem;
+    display: none;
+
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#reiniciarGanador{
+    color: whitesmoke;
+    font-family: fantasy;
+    display: none;
+    font-size: 2rem;
+}
+
+#reiniciarPerdedor{
+    color: whitesmoke;
+    font-family: fantasy;
+    display: none;
+    font-size: 2rem;
+}
+
+.btn2{
+    display: none;
+    color: whitesmoke;
+    background-color: rgb(140, 27, 27);
+    width: 10rem;
+    height: 5rem;
+    font-family: fantasy;
+}
+
+.btn2:active {
+    transform: scale(0.80);
+    transition: 0,2s all;
+}
+
+.btn:active {
+    transform: scale(0.80);
+    transition: 0,2s all;
+}
+
+@media (max-width:600px) {
+    .escogerAvatar{
+        flex-direction: column;
+    }
+    .btn{
+        margin-bottom: 0%;
+    }
+}

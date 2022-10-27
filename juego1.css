@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-image: url(./background.01.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* el que hace que muevas arriba y abajo y la imagen se quede*/
+    background-size: cover;
+}
+
+.titulo{
+    font-size: 3rem;
+    text-align: center;
+    font-family: fantasy;
+    color: whitesmoke;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.escogerAvatar{
+    display: flex;
+    justify-content: space-evenly;
+}
+          
+.btn:active {
+    transform: scale(0.80);
+    transition: 0,2s all;
+    /* Scaling button to 0.98 to its original size */
+    /*box-shadow: 3px 2px 22px 1px rgba(248, 246, 246, 0.24);*/
+    /* Lowering the shadow */
+}
+
+@media (max-width:600px) {
+    .escogerAvatar{
+        flex-direction: column;
+    }
+    .btn{
+        margin-bottom: 0%;
+    }
+}

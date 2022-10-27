@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
+        <title>Juegazooo</title>
+        <link rel="stylesheet" href="./juego2.css"/>
+    </head>
+    <body>
+        <header class="escogerAtaque">
+            <span>Tu personaje:</span>
+            <span>Personaje PC:</span>
+        </header>
+        <main > 
+            <section class="titulo">
+                <input type="image" src= "./leonard.png" class="avatar"/> 
+                <p id="vidas">Vidas jugador = <span id="vidasJugador">3</span></p>
+                <p id="vidas">Vidas PC = <span id="vidasEnemigo">3</span></p> 
+                <input type="image" src="./sheldon.png" class="avatar"/> 
+            </section>
+            
+            <section class="elecciones">
+                <p>Tu elección:</p>
+            
+                    <input id="piedraSinBoton" type="image" src="./piedra.png"/>   
+                    <input id="papelSinBoton" type="image" src="./papel.png"/>    
+                    <input id="tijeraSinBoton" type="image" src="./tijera.png"/>    
+                    <input id="lagartoSinBoton" type="image" src="./lagarto.png"/>  
+                    <input id="spockSinBoton" type="image" src="./spock.png"/>        
+            
+                    <input id="piedraPC" type="image" src="./piedra.png"/>          
+                    <input id="papelPC" type="image" src="./papel.png"/>        
+                    <input id="tijeraPC" type="image" src="./tijera.png"/>    
+                    <input id="lagartoPC" type="image" src="./lagarto.png"/>   
+                    <input id="spockPC" type="image" src="./spock.png"/> 
+            
+                <p>PC escoge:</p>
+            </section>
+            
+            <div onclick="elegirPiedra()" class="piedra">
+                <input type="image" src="./piedra.png" id="piedra" class="btn"/>    
+            </div>   
+            <div onclick="elegirPapel()" lass="papel">
+                <input type="image" src="./papel.png" id="papel" class="btn"/>  
+            </div>   
+            <div onclick="elegirTijera()"class="tijera">
+                <input type="image" src="./tijera.png" id="tijera" class="btn"/>    
+            </div>  
+            <div onclick="elegirLagarto()"class="lagarto">
+                <input type="image" src="./lagarto.png" id="lagarto" class="btn"/>  
+            </div>   
+            <sectioan onclick="elegirSpock()"class="spock">
+                <input type="image" src="./spock.png" id="spock" class="btn"/>     
+            </div>  
+        </main>
+
+        <footer class="footer">
+            <div>
+                <a href="/Users/admin/Desktop/Javascript/Juegazoo/juego.html">
+                    <input type="button" value="Reiniciar" id="boton2" class="btn2"/>
+                </a>
+                <p></p>
+                <p id="reiniciarGanador">Felicidades, has ganado!
+                </p>
+            </div>
+            <div>
+                <a href="/Users/admin/Desktop/Javascript/Juegazoo/juego.html">
+                    <input type="button" value="Reiniciar" id="boton2" class="btn2"/>
+                </a>
+                <p></p>
+                <p id="reiniciarPerdedor">Lo siento has perdido
+                </p>
+            </div> 
+        </footer>
+        
+        <script src="juego2.js"></script>
+
+    </body>
+</html>
+    
